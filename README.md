@@ -371,6 +371,33 @@ docker volume prune
 
 ## Architecture Overview
 
+### System Flow Diagram
+
+![JobMatch AI System Architecture](images/jobMatchAI-FlowDiagram.png)
+
+The system architecture consists of three main components:
+
+1. **Data Ingestion Pipeline (Offline)**
+   - Ingests jobs from external sources (Rise, LinkedIn) and user queries/resumes
+   - Processes data through NLP Service using SBERT embeddings and NER
+   - Stores entities and relations in Neo4j Knowledge Graph
+   - Indexes job text in Elasticsearch for fast retrieval
+
+2. **Online Search & Ranking**
+   - **Hybrid Search Service**: Combines three search strategies
+     - Graph Traversal: Finds jobs via skill relationships in Neo4j
+     - Vector Search: Semantic similarity matching using embeddings
+     - BM25 Retrieval: Traditional keyword-based search from Elasticsearch
+   - **Candidate Fusion**: Intelligently merges results from all three approaches
+
+3. **Explainable Reranking**
+   - **Reranking Service**: Uses deterministic utility function to score jobs
+   - Computes factor scores based on Skills, Experience, Location, and Salary
+   - **Generative Layer**: Anthropic Claude LLM provides natural language explanations
+   - Delivers ranked results with transparent explanations to the frontend
+
+### Component Architecture
+
 ```
 ┌─────────────┐
 │   Frontend  │  React + TypeScript
