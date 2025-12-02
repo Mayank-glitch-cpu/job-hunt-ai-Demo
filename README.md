@@ -93,14 +93,24 @@ Username: neo4j
 Password: password
 ```
 
-## Live Demo Screenshots
+## Live Demo
 
-### 1. Landing Page
+### Video Walkthrough
+
+Watch a complete demonstration of the JobMatch AI platform in action:
+
+🎥 **[Live Demo Video](https://www.canva.com/design/DAG6WCshhY4/bdcbmyay8II-UPhweNhdSA/watch?utm_content=DAG6WCshhY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ae7bce759)**
+
+The video showcases all key features including semantic search, resume upload, AI-powered matching, and query-based reranking.
+
+### Screenshots
+
+#### 1. Landing Page
 ![Landing Page](images/1.png)
 
 The landing page welcomes users with a clean, modern interface showcasing the platform's capabilities. Users can choose to start searching immediately or upload their resume for personalized recommendations. The dashboard displays key metrics including 10,000+ jobs indexed, 5,000+ skills mapped, 500+ companies, and a 95% success rate.
 
-### 2. Classic Search Interface
+#### 2. Classic Search Interface
 ![Classic Search](images/2.png)
 
 The search interface provides multiple dimensions for job discovery. Users can enter natural language queries with intelligent search suggestions based on different search criteria:
@@ -111,7 +121,7 @@ The search interface provides multiple dimensions for job discovery. Users can e
 - **Industry & Domain**: Focus on specific sectors like fintech or healthcare
 - **Salary & Compensation**: Set salary expectations and equity preferences
 
-### 3. AI Match Analysis - Without Resume
+#### 3. AI Match Analysis - Without Resume
 ![AI Match Analysis Without Resume](images/5.png)
 
 When searching without a resume, the AI provides detailed explanations for why each job appears in the results. The system analyzes multiple factors:
@@ -124,7 +134,7 @@ When searching without a resume, the AI provides detailed explanations for why e
 
 Each factor is weighted and explained, helping users understand the relevance score.
 
-### 4. AI Recommendations - With Resume
+#### 4. AI Recommendations - With Resume
 ![AI Recommendations With Resume](images/7.png)
 
 After uploading a resume, the platform provides personalized job recommendations with comprehensive match analysis:
@@ -137,7 +147,7 @@ After uploading a resume, the platform provides personalized job recommendations
 
 The AI explains not just what matches, but why, providing transparency into the recommendation engine.
 
-### 5. Query-Based Reranking
+#### 5. Query-Based Reranking
 ![Query-Based Reranking](images/8.png)
 
 The smart search feature allows users to refine results using keyword-based reranking. After an initial search, users can use the dropdown to select specific keywords from their query (like "backend developer", "microservices architect", "PostgreSQL", "Django", etc.) to dynamically reorder results. This gives users fine-grained control over prioritization while maintaining the AI-powered relevance scoring. The system shows 9490+ jobs with match percentages, and users can further filter by work location, experience level, employment type, and working schedule.
