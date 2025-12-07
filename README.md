@@ -215,8 +215,8 @@ NEO4J_PASSWORD=password
 ```
 
 **Note**: Docker images are pre-configured in `docker-compose.yml`:
-- `mvyas7/job-hunt-ai-backend:latest`
-- `mvyas7/job-hunt-ai-frontend:latest`
+- `mvyas7/job-hunt-ai-backend:v1.2.0`
+- `mvyas7/job-hunt-ai-frontend:v1.3.0`
 
 ### Port Configuration
 
